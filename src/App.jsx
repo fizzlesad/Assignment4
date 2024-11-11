@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import HeronsFormula from './components/HeronsFormula.jsx'
+import AmbiguousCase from './components/AmbiguousCase.jsx'
 import './App.css'
 
 function App() {
@@ -10,8 +10,8 @@ function App() {
     <>
     <HeronsFormula />
     <AmbiguousCase />
-    <NewtonsMethod />
-    <PolynomialFunction />
+    {/*<NewtonsMethod />
+    <PolynomialFunction /> */}
     </>
   )
 }
