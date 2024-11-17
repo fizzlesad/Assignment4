@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import './AmbiguousCase.css'
 
 function AmbiguousCase() {
 
@@ -7,7 +8,7 @@ function AmbiguousCase() {
     const [ang, setAngle] = useState(0);
     const [type, setType] = useState("");
 
-    function heronsFormula(e) {
+    function ambiguousCase(e) {
         e.preventDefault();
         const height = b * Math.sin(ang * (Math.PI / 180));
         if (ang <= 90) {
@@ -32,7 +33,7 @@ function AmbiguousCase() {
     }
 
     return (
-        <form onSubmit={(e) => heronsFormula(e)}>
+        <form onSubmit={(e) => ambiguousCase(e)} class="ambiguous-container">
             <h1>Ambiguous Case</h1>
             <label>A Value:</label>
             <input type="number" value={a} onChange={(event) => { setA(event.target.value) }} required />

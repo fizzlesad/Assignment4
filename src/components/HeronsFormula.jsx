@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import './HeronsFormula.css';
 
 function HeronsFormula() {
 
@@ -14,7 +15,7 @@ function HeronsFormula() {
   }
 
   return (
-    <form onSubmit={(e) => heronsFormula(e)}>
+    <form onSubmit={(e) => heronsFormula(e)} class="herons-container">
       <h1>Herons Formula</h1>
       <label>A Value:</label>
       <input type="number" value={a} onChange={(event) => { setA(event.target.value) }} required />
