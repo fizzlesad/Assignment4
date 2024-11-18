@@ -13,7 +13,7 @@ function NewtonsMethod() {
         let guess = g;
         while (root - guess != 0) {
             guess = root;
-            root = (guess - (6 * Math.pow(guess, 4) - 13 * Math.pow(guess, 3) - 18 * Math.pow(guess, 2) + 7 * g + 6) / (24 * Math.pow(guess, 3) - 39 *
+            root = (guess - (6 * Math.pow(guess, 4) - 13 * Math.pow(guess, 3) - 18 * Math.pow(guess, 2) + 7 * guess + 6) / (24 * Math.pow(guess, 3) - 39 *
                 Math.pow(guess, 2) - 36 * guess + 7));
         }
         setRoot(root);
