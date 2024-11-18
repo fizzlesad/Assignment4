@@ -2,7 +2,6 @@ import { useState } from 'react';
 import './AmbiguousCase.css'
 
 function AmbiguousCase() {
-
     const [a, setA] = useState(0);
     const [b, setB] = useState(0);
     const [ang, setAngle] = useState(0);

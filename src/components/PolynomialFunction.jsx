@@ -2,7 +2,6 @@ import { useState } from 'react';
 import './PolynomialFunction.css'
 
 function PolynomialFunction() {
-
     const [coefficients, setCoefficients] = useState(0);
     const [exponents, setExponents] = useState(0);
     const [xValue, setXValue] = useState(0);
@@ -19,11 +18,11 @@ function PolynomialFunction() {
         let coefficientCount = coefficientValues.length;
         let i = 0;
         let responseOne = "f(x)=";
+
         while (i <= coefficientCount) {
             if (coefficientValues[i] > 0 || coefficientValues[i] < 0) {
                 responseOne += coefficientValues[i] + "x^" + exponentValues[i];
-            }
-            else {
+            } else {
                 responseOne == responseOne;
             }
             if (i >= 0 && i < coefficientCount - 1 && coefficientValues[i + 1] > 0) {
@@ -31,13 +30,16 @@ function PolynomialFunction() {
             }
             i++;
         }
+
         setPolynomialFunction(responseOne);
         i = 0;
         let ans = 0;
+
         while (i < coefficientCount) {
             ans += coefficientValues[i] * Math.pow(x, exponentValues[i])
             i++;
         }
+
         let responseTwo = "f(" + x + ")=" + ans;
         setPolynomialEvaluation(responseTwo);
     }
